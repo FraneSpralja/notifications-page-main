@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="main_notification">
+      <div class="main_notification--header">
+        <div class="main_notification--header_left">
+          <span class="main_notification--header_left--notification">
+            Notifications
+            <span id="no_read">
+              0
+            </span>
+          </span>
+        </div>
+        <div class="main_notification--header_rigth">
+          <button id="all_read">
+            Mark all as read
+          </button>
+        </div>
+      </div>
+      <div class="main_notification--body">
+        <ul class="main_notification--body_list">
+          <li class="main_notification--body_item">
+            <div class="body_item--avatar">
+              <img src="assets/images/avatar-mark-webber.webp" alt="">
+            </div>
+            <div class="body_item--text">
+              <span><strong class="body_item--name">Mark Webber</strong> reacted to your recent post <strong class="body_item--msg"> My first tournament today!</strong>  <br> <span class="body_item--date">1m ago</span></span>
+            </div>
+          </li>
+          <li class="main_notification--body_item">
+            <div class="body_item--avatar">
+              <img src="assets/images/avatar-angela-gray.webp" alt="">
+            </div>
+            <div class="body_item--text">
+              <span><strong class="body_item--name">Angela Gray</strong> followed you  <br> <span class="body_item--date">5m ago</span></span>
+            </div>
+          </li>
+          <li class="main_notification--body_item">
+            <div class="body_item--avatar">
+              <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+            </div>
+            <div class="body_item--text">
+              <span><strong class="body_item--name">Jacob Thompson</strong> has joined your group <strong class="body_item--group">Chess Club</strong> <br> <span class="body_item--date">1 day ago</span></span>
+            </div>
+          </li>
+          <li class="main_notification--body_item">
+            <div class="body_item--avatar">
+              <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+            </div>
+            <div class="body_item--text">
+              <span><strong class="body_item--name">Rizky Hasanuddin</strong> sent you a private message <br> <span class="body_item--date">5 day ago</span></span>
+              <div class="body_item--private-msg">
+                <p>
+                  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                  I'm already having lots of fun and improving my game.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="main_notification--body_item">
+            <div class="body_item--avatar">
+              <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+            </div>
+            <div class="body_item--text">
+              <span><strong class="body_item--name">Kimberly Smith</strong> commented on your picture <strong class="body_item--group">Chess Club</strong> <br> <span class="body_item--date">1 week ago</span></span>
+            </div>
+          </li>
+          <li class="main_notification--body_item">
+            <div class="body_item--avatar">
+              <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+            </div>
+            <div class="body_item--text">
+              <span><strong class="body_item--name">Nathan Peterson</strong> reacted to your recent post <strong class="body_item--msg"> 5 end-game strategies to increase your win rate</strong>  <br> <span class="body_item--date">2 weeks ago</span></span>
+            </div>
+          </li>
+          <li class="main_notification--body_item">
+            <div class="body_item--avatar">
+              <img src="assets/images/avatar-anna-kim.webp" alt="">
+            </div>
+            <div class="body_item--text">
+              <span><strong class="body_item--name">Anna Kim</strong> left the group <strong class="body_item--group">Chess Club</strong> <br> <span class="body_item--date">2 weeks ago</span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
