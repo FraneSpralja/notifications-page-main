@@ -87,6 +87,10 @@ li.main_notification--body_item {
     border-radius: 3px;
 }
 
+.body_item--private-msg:hover {
+    background: #e5eff9;
+}
+
 strong.body_item--msg, span.body_item--date {
     color: #757575;
 }
@@ -95,7 +99,7 @@ strong.body_item--msg, span.body_item--date {
     color: #454545;
 }
 
-strong.body_item--group {
+strong.body_item--name:hover, strong.body_item--group:hover {
     color: #093279;
 }
 
@@ -103,8 +107,25 @@ strong.body_item--group {
     background: #f6fafd !important;
 }
 
+li.main_notification--body_item.notification-no-read:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    top: 7px;
+    margin-top: 7px;
+    margin-left: auto;
+}
+
 @media (max-width: 850px) {
     .main_notification {
-        width: 90%;
+        width: 95%;
+    }
+
+    li.main_notification--body_item.notification-no-read:after {
+        position: inherit;
+        flex: 0 0 3%;
     }
 }
