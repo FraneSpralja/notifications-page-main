@@ -42,7 +42,7 @@
 span#no_read {
     padding: 5px 12px;
     border-radius: 5px;
-    background: #093279;
+    background: #0a317b;
     color: #fff;
 }
 
@@ -70,7 +70,7 @@ ul.main_notification--body_list {
 }
 
 li.main_notification--body_item {
-    background: #fff;
+    background: #ffffff;
     padding: 10px 20px;
     margin-bottom: 15px;
     border-radius: 7px;
@@ -99,8 +99,8 @@ strong.body_item--msg, span.body_item--date {
     color: #454545;
 }
 
-strong.body_item--name:hover, strong.body_item--group:hover {
-    color: #093279;
+strong.body_item--name:hover, strong.body_item--group:hover, strong.body_item--msg:hover {
+    color: #0a317b;
 }
 
 .notification-no-read {
@@ -112,11 +112,16 @@ li.main_notification--body_item.notification-no-read:after {
     display: block;
     width: 10px;
     height: 10px;
-    background: red;
+    background: rgb(246, 83, 81);
     border-radius: 50%;
     top: 7px;
     margin-top: 7px;
     margin-left: auto;
+}
+
+footer {
+    padding: 20px;
+    background-color: #353535;
 }
 
 @media (max-width: 850px) {
